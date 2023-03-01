@@ -1,0 +1,28 @@
+git 相关命令
+	git clone
+		拉去远程仓库文件
+			git clone xxxx.git
+	
+	git commit
+		提交用户文件
+		git add .[相关文件]
+		
+		推送文件内容到远程仓库
+		git push origin dev[分支名]	
+	
+
+	git merge 合并
+		git checkout master(分支名)
+
+		git pull origin master(分支名) 拉去master分支仓库数据
+		
+		git merge my_branch本地分支名
+
+
+	git 冲突相关命令
+		git status 查看当前git仓库相关情况
+		
+		解决冲突
+		git commit -m '解决冲突完成'
+
+		git push origin my_dev
