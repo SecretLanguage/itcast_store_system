@@ -1,0 +1,23 @@
+Django ORM(关系对象模型映射)
+
+	MVT架构
+		Models 模型 数据存储——数据库交互
+		Views 试图 页面数据逻辑处理
+		Template 模型  前端显示
+
+		面向对象(OOP)
+	
+	ORM
+		类 -- 数据表
+		对象 -- 数据行
+		属性 -- 字段
+	
+	ctrl + s 屏幕进行锁死状态
+	ctrl + q 解锁
+
+	数据库迁移
+	python manage.py makemigration 生成迁移文件
+	python manage.py migrate  进行数据库迁移  [后需添加数据库 需要设置默认值/重新生成]
+
+
+

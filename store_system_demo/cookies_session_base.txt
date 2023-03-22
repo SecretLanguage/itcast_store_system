@@ -1,0 +1,16 @@
+状态保持
+    Cookies 客户端存储信息[辨识用户身份]
+        基于域名安全（不同域名不同cookies)，HttpResponse.set_cookies()函数，键值对[字典]进行存储
+        存在有效时间，有效期结束，自动删除
+    Session 服务端存储信息
+
+使用redis存储服务器session信息
+    操作：request.session.clear() 清空所有Session信息
+
+请求方式 GET, POST, DEL
+    def get():
+        return HttpResponse()
+
+    def post():
+        return HttpResponse()
+

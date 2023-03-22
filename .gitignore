@@ -1,0 +1,52 @@
+__pycache__/
+*.py[cod]
+*.$py.class
+
+# c Extensions
+*.so
+
+# packaging 
+__pycache__/
+*.py[cod]
+*.$py.class
+
+# c Extensions
+*.so
+
+# packaging 
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+var/
+
+# Pyinstaller
+*.manifest
+*.spec
+
+# installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pycharm .idea
+itcast_store_system/.idea/*
+

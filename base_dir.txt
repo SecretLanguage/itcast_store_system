@@ -1,0 +1,41 @@
+# django project ---- settings.py
+# BASE_DIR基础文件夹目录
+
+	BASE_DIR 项目所在最外层文件夹，所有文件以BASE_DIR为相对路径
+
+	Debug=True 开启Django内部调试（热重载）
+
+# 静态资源访问  Static文件
+
+	STATICFILES_DIRS 查找静态文件的目录
+	STATIC_URL 静态文件目录
+
+# Model 模型类 定义
+class student模型类(models.Model):
+	#  字段
+	name = CharField(max_length=50, verbose_name='姓名')
+	
+	##  外建  级联删除 主表数据删除---从表数据删除   cascade级联删除
+	book = models.ForeignKey(BookInfo, on_delete=models.CASCADE) 
+	
+
+	class Meta:
+		db_table = 'bookinfo'  # 数据库表名
+		verbose_name = '图书' #admin中站点显示名称
+
+	def __str__(self):
+		return self.name  # 每个数据对象显示信息
+
+# 外建 ForeignKey 关联其他表
+	ORM 一对一， 一堆多， 多对多
+	
+性别 gender进行约束 
+	GENDER_CHOICE = {
+		(0, 'male'),
+		(1, 'female'),
+	}
+
+	gender = models.SmallIntegerField(chioices=GENDER_CHOICE, default=0)
+
+	
+
