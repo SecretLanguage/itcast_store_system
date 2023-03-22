@@ -48,5 +48,5 @@ env.bak/
 venv.bak/
 
 # pycharm .idea
-store_system_demo/.idea/*
+itcast_store_system/.idea/*
 
